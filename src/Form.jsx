@@ -8,7 +8,7 @@ const Form = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-       setFullname(" Full name: "+firstname+" "+lastname)
+       setFullname("Full Name: "+firstname+" "+lastname)
     }
   return (
     <div>
