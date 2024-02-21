@@ -8,7 +8,7 @@ const Form = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-       setFullname("Full Name: "+firstname+" "+lastname)
+       setFullname(firstname+" "+lastname)
     }
   return (
     <div>
@@ -21,7 +21,7 @@ const Form = () => {
       <br/>
       <button type="submit" >Submit</button>
       <br/>
-    {fullname}
+    {fullname && "Full Name: " + fullname }
       </form>
     </div>
   )
